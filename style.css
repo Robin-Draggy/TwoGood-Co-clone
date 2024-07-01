@@ -1,0 +1,340 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::selection{
+    color: white;
+    background-color: black;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background-color: #F7F7F7;
+}
+#main{
+    margin: 0 3vh;
+
+}
+#nav{
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+    padding:0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(239, 239, 239);
+}
+.nav-logo svg{
+    width: 50px;
+    cursor: pointer;
+}
+.nav-right{
+    display: flex;
+    align-items: center;
+    gap: 12vh;
+}
+.nav-right .nav-links{
+    display: flex;
+    gap: 10vh;
+}
+.nav-right .nav-links a{
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.nav-right .nav-icons{
+    display: flex;
+    gap: 12vh;
+    padding: 7px 12px;
+    background-color: rgb(239, 239, 239);
+    border-radius: 50px;
+}
+.nav-right .nav-icons i{
+    font-size: 18px;
+}
+.cursor{
+    width: 250px;
+    height: 250px;
+    background-color:rgb(245, 223, 223);
+    position: fixed;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+#page1{
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 5vh;
+    margin-top: 20vh;
+}
+#page1 h1{
+    font-family: futura;
+    font-size: 36vh;
+    text-transform: uppercase;
+    line-height: 32vh;
+    letter-spacing: -2vh;
+}
+#video-container{
+    height: 100vh;
+    width: 100%;
+    margin-top: 10px;
+    position: relative;
+}
+#video-container #play{
+    padding: 4vh 2.8vh;
+    font-size: 2.5vh;
+    font-weight: bold;
+    font-family: futura;
+    background-color: black;
+    color: white;
+    position: fixed;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    scale: 0;
+}
+
+#video-container video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#page2{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5vh 2.5vh;
+}
+#page2 .elem{
+    width: 32%;
+    height: 90vh;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#page2 .elem img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#page2 .elem .bar{
+    width: 70%;
+    height: 50px;
+    background-color: rgb(225, 198, 168);
+    position: absolute;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+#page2 .elem .bar .dot{
+    width: 8px;
+    height: 8px;
+    background-color: black;
+    border-radius: 50%;
+}
+#page2 .elem .bar p{
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#page2 .elem .bar p:nth-child(3){
+    font-weight: 600;
+}
+
+#page3{
+    width: 100%;
+    min-height: 160vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 10vh 0;
+}
+#page3 .contents{
+    width: 90vh;
+    height: 70vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 15vh;
+    
+}
+#page3 .contents img{
+    width: 100%;
+    height: 100%;
+}
+#page3 .contents .details{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#page4{
+    width: 100%;
+    height: 120vh;
+    margin: 8vh 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#page4 h1{
+    text-align: center;
+    font-size: 12vh;
+    line-height: 11vh;
+    font-family: futura;
+    width: 75%;
+}
+
+#page-sub1{
+    width: 100%;
+    min-height: 100vh;
+    padding: 10vh 4vh;
+    margin: 15vh 0;
+}
+#page-sub1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* #page-sub1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+#page-sub2{
+    width: 100%;
+    height: 40vh;
+    text-transform: uppercase;
+    margin: 0 3vh;
+}
+#page-sub2 .up{
+    width: 100%;
+    height: 100%;
+}
+#page-sub2 .up h1{
+    text-align: center;
+    font-family: futura;
+    font-size: 10vh;
+    margin-bottom: 10vh;
+}
+#page-sub2 .up p{
+    text-align: center;
+    font-size: 12px;
+}
+#line-through .down{
+    width: 97%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+#page-sub2 .down p{
+    font-size: 13px;
+}
+#page-sub3{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    gap: 5vh;
+    margin: 10vh 0;
+}
+#page-sub3 .left-side{
+    flex-basis: 60%;
+}
+#page-sub3 .left-side h1{
+    font-size: 10vh;
+    line-height: 11vh;
+    font-family: futura;
+    letter-spacing: -2px;
+}
+#page-sub3 .right-side {
+    flex-basis: 30%;
+}
+#page-sub3 .right-side p{
+    width: 80%;
+    font-size: 3vh;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10vh;
+}
+#page-sub3 .right-side a{
+    text-decoration: none;
+    color: black;
+}
+#page-sub3 .right-side a:hover{
+    text-decoration: underline;
+}
+hr{
+    background-color: black;
+    height: 1px;
+    width: 97%;
+}
+
+
+
+
+
+
+
+@media (max-width:600px) {
+    #page1{
+        padding: 12vh 5vh;
+    }
+    #page1 h1{
+        font-size: 15vh;
+        text-transform: uppercase;
+        line-height: 13vh;
+        letter-spacing: -1vh;
+    }
+    #video-container{
+        height: 70vh;
+        margin-top: 15px;
+    }
+    #video-container #play{
+        padding: 7vh 5vh;
+        font-size: 3.5vh;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 1;
+        scale: 1;
+    }
+    #page2{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        padding: 5vh 2.5vh;
+        flex-direction: column;
+    }
+    #page2 .elem{
+        width: 100%;
+        height: 100vh;
+        margin-bottom: 3vh;
+    }
+    #page2 .elem img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
